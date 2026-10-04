@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="device-detect.js"></script>
+    <title>食物保鮮管理</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="home-page">
+
+    <!-- 首頁背景 -->
+    <img src="images/首頁.png" class="home-image">
+
+
+    <!-- =================================
+         8 個食物分類按鈕
+         ================================= -->
+
+    <!-- 包子 -->
+    <a href="bao.html"
+       class="circle-button bao-button"
+       aria-label="包子"></a>
+
+    <!-- 麵類 -->
+    <a href="noodles.html"
+       class="circle-button noodles-button"
+       aria-label="麵類"></a>
+
+    <!-- 海鮮 -->
+    <a href="seafood.html"
+       class="circle-button seafood-button"
+       aria-label="海鮮"></a>
+
+    <!-- 甜點 -->
+    <a href="dessert.html"
+       class="circle-button dessert-button"
+       aria-label="甜點"></a>
+
+    <!-- 飯類 -->
+    <a href="rice.html"
+       class="circle-button rice-button"
+       aria-label="飯類"></a>
+
+    <!-- 饅頭 -->
+    <a href="mantou.html"
+       class="circle-button mantou-button"
+       aria-label="饅頭"></a>
+
+    <!-- 蔬菜 -->
+    <a href="vegetable.html"
+       class="circle-button vegetable-button"
+       aria-label="蔬菜"></a>
+
+    <!-- 水果 -->
+    <a href="fruit.html"
+       class="circle-button fruit-button"
+       aria-label="水果"></a>
+
+
+    <!-- =================================
+         右上三個按鈕
+         ================================= -->
+
+    <button
+        class="home-control home-control-home"
+        onclick="location.href='index.html'"
+        aria-label="回首頁">
+    </button>
+
+    <button
+        class="home-control home-control-help"
+        onclick="location.href='help.html'"
+        aria-label="使用教學">
+    </button>
+
+    <button
+        class="home-control home-control-all"
+        onclick="location.href='all-foods.html'"
+        aria-label="全部品項">
+    </button>
+
+
+    <!-- =================================
+         上一頁 / 下一頁
+         ================================= -->
+
+    <button
+        class="home-prev-button"
+        onclick="location.href='vegetable.html'"
+        aria-label="上一頁">
+    </button>
+
+    <button
+        class="home-next-button"
+        onclick="location.href='dessert.html'"
+        aria-label="下一頁">
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
