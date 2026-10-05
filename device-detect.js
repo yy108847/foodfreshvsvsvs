@@ -1,28 +1,20 @@
-/* =========================================================
-   電腦 / 手機自動判斷
-   螢幕寬度 <= 768px → 手機版
-   螢幕寬度 > 768px → 電腦版
-========================================================= */
-
 (function () {
 
-    /* 如果目前已經在 mobile 資料夾，就不要再跳轉 */
-
+    // 已經在手機版，不要再次跳轉
     if (window.location.pathname.includes("/mobile/")) {
         return;
     }
 
-
-    /* 判斷目前頁面 */
+    // 取得目前頁面名稱
+    // 如果網址最後是 /，代表首頁，要當成 index.html
+    const path = window.location.pathname;
 
     const page =
-        window.location.pathname
-            .split("/")
-            .pop();
+        path.endsWith("/")
+            ? "index.html"
+            : path.split("/").pop();
 
-
-    /* 頁面對應 */
-
+    // 電腦版頁面 → 對應手機版頁面
     const mobilePages = {
 
         "index.html": "mobile/index.html",
@@ -49,16 +41,13 @@
 
     };
 
-
-    /* 只有手機才跳到 mobile */
-
+    // 螢幕寬度 768px 以下 → 跳到手機版
     if (
         window.innerWidth <= 768 &&
         mobilePages[page]
     ) {
 
-        window.location.href =
-            mobilePages[page];
+        window.location.href = mobilePages[page];
 
     }
 
