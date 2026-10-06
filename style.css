@@ -353,8 +353,8 @@ body {
 
 .category-page .category-help {
     top: 2.5%;
-    right: 8%;
-    width: 7%;
+    right: 9%;
+    width: 6%;
 }
 
 
@@ -1511,4 +1511,60 @@ body {
         padding: 10px 18px;
     }
 
+}
+
+/* =========================================================
+   全部指定按鈕透明
+   不改位置、不改大小、不改背景圖片
+========================================================= */
+
+
+/* ① 所有頁面的右上三個按鈕
+   主頁 + 8個分類頁 + 使用教學 + 全部品項
+*/
+.home-page .home-control,
+.category-page .category-control,
+.help-page .help-control,
+.all-foods-page .all-control {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+
+/* ② 所有頁面的上一頁 / 下一頁
+*/
+.home-page .home-prev-button,
+.home-page .home-next-button,
+
+.category-page .category-navigation button,
+
+.help-page .help-prev-button,
+.help-page .help-next-button,
+
+.all-foods-page .all-prev-button,
+.all-foods-page .all-next-button {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+
+/* ③ 全部品項頁面的「新增品項」＋按鈕
+*/
+.all-foods-page .all-add-button {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+
+/* ④ 主頁八個分類按鈕
+   甜點 / 水果 / 飯類 / 麵類
+   饅頭 / 包子 / 海鮮 / 蔬菜
+*/
+.home-page .circle-button {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
 }
